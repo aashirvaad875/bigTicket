@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button {
+    @apply inline-flex justify-center font-medium border border-transparent rounded-md shadow-sm focus:outline-none;
+  }
+  .button.view {
+    @apply text-white bg-green-500;
+  }
+  .button.download {
+    @apply text-white bg-rt-base;
+  }
+
+  .button.mark {
+    @apply text-white bg-blue-700;
+  }
+  .button.delete {
+    @apply text-white bg-red-600 hover:bg-red-700 focus:ring-red-500;
+  }
+
+  .button.cancel {
+    @apply text-white bg-red-700;
+  }
+
+  .button.auth {
+    @apply text-sm font-semibold text-gray-300 bg-transparent border-transparent;
+  }
+
+  .icon {
+    @apply sm:w-4 md:w-4 lg:w-4 xl:w-5 2xl:w-6;
+  }
+
+  .button.auth:hover {
+    @apply text-sm font-semibold text-gray-400 bg-transparent border-transparent;
+  }
+  .rtheading {
+    @apply py-2 font-normal text-white sm:text-base md:text-lg lg:text-2xl xl:text-2xl 2xl:text-3xl;
+  }
+  .rtblackheading {
+    @apply py-2 font-normal text-black sm:text-base md:text-lg lg:text-2xl xl:text-2xl 2xl:text-3xl;
+  }
+  .rtparagraph {
+    @apply text-white font-extralight sm:text-xs md:text-sm lg:text-base xl:text-base 2xl:text-base;
+  }
+
+  .button.primary {
+    @apply text-sm font-semibold text-white bg-rt-dark;
+  }
+
+  .rtcontainer {
+    @apply w-11/12 mx-auto mt-32 mb-16 content-container;
+  }
+}
+
+.content-container {
+  min-height: calc(100vh - theme('spacing.96'));
+}
